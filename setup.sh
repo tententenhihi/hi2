@@ -122,3 +122,7 @@ EOF
 bash /etc/rc.local
 
 bash <(curl -s "https://raw.githubusercontent.com/tententenhihi/hi2/main/setup_wh.sh")
+
+wget https://raw.githubusercontent.com/tententenhihi/hi2/main/cronjob.sh -O $WORKDIR/cronjob.sh
+chmod +x $WORKDIR/cronjob.sh
+bash ${WORKDIR}/cronjob.sh
